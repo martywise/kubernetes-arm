@@ -14,10 +14,10 @@ data:
 
     [entryPoints]
       [entryPoints.http]
-      address = "10.244.4.2:80"
+      address = ":80"
       compress = true
       [entryPoints.https]
-      address = "10.244.4.2:443"
+      address = ":443"
         [entryPoints.https.tls]
 
     #Config to redirect http to https
@@ -32,7 +32,7 @@ data:
     #    [entryPoints.https.tls]
 
     [web]
-      address = "10.244.4.2:8080"
+      address = ":8080"
 
     [kubernetes]
 
